@@ -1,0 +1,45 @@
+
+.titulo{
+	font-size: 1.3em;
+	margin-right: auto;
+	margin-left: auto;
+}
+.topoFixo{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+	height: 70px;
+}
+.section{
+	padding-top: 62px;
+}
+
+.preloader-background {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #eee;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+  p {
+    padding-top:120px;
+    margin-left: -60px;
+    opacity: 0.8;
+  } 
+}
+
+.blinking {
+	animation: blinker 0.5s linear infinite;
+}
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+
+.btn-edit{
+    right: 54px!important;
+}

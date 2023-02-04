@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+
+  <title>BucketList</title>
+  <link rel="stylesheet" href="icons/material.css">
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+  <div class="preloader-background">
+    <div class="preloader-wrapper big active">
+      <div class="spinner-layer spinner-blue">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+
+      <div class="spinner-layer spinner-red">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+
+      <div class="spinner-layer spinner-yellow">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+
+      <div class="spinner-layer spinner-green">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+    <p class="blinking">Carregando</p>
+  </div>
+
+
+
+
+  <div class="topoFixo z-depth-1 teal darken-4 valign-wrapper white-text">
+    <h5 class="titulo">BucketList</h5>
+  </div>
+
+  <div class="section" id="home">
+    
+    <ul class="collection" id="bucketList">
+
+      <li class="collection-item avatar">
+        <i class="circle teal">0</i>
+        <span class="title">Tarefa</span>
+        <p>Média</p>
+        <a href="#" class="secondary-content btn-edit"><i class="material-icons">edit</i></a>
+        <a href="#" class="secondary-content btn-delete"><i class="material-icons">delete</i></a>
+       </li>
+
+    </ul>
+   
+  </div>
+  
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large orange darken-4">
+      <i class="large material-icons">menu</i>
+    </a>
+    
+    <ul>
+      <li><a href="index.html" class="btn-floating orange darken-3"><i class="material-icons">home</i></a></li>
+      <li><a href="add.html" class="btn-floating orange darken-3"><i class="material-icons">add_box</i></a></li>
+      <li><a href="#search" class="btn-floating orange darken-3 modal-trigger"><i class="material-icons">search</i></a>
+      </li>
+    </ul>
+  </div>
+  <div style="text-align: center">
+    <a class="waves-effect waves-light btn" id="add-reset">Resetar Tabela</a> 
+  </div>
+    
+
+
+
+  <div id="search" class="modal">
+    <div class="modal-content">
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">search</i>
+              <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+              <label for="icon_prefix2">O que deseja procurar ?</label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" id="btnProcurar">Procurar</a>
+    </div>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>

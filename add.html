@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src * data: gap: ms-appdata: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"
+    />
+
+    <title>BucketList</title>
+    <link rel="stylesheet" href="icons/material.css" />
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <div class="topoFixo z-depth-1 teal darken-4 valign-wrapper white-text">
+      <h5 class="titulo">BucketList</h5>
+    </div>
+
+    <div class="section" id="add">
+      <br />
+
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="tarefa" type="text" />
+              <label for="tarefa">Tarefa</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input type="text" class="datepicker" id="data" />
+              <label for="data">Data Prevista</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <select id="prioridade">
+                <option value="1">Baixa</option>
+                <option value="2">Média</option>
+                <option value="3">Alta</option>
+              </select>
+              <label>Selecione a Prioridade</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="descricao" class="materialize-textarea"></textarea>
+              <label for="descricao">Descrição</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s12">
+              Tarefa Realizada?
+              <div class="switch">
+                <label>
+                  Não
+                  <input type="checkbox" id="realizada" />
+                  <span class="lever"></span>
+                  Sim
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s12">
+              <br />
+              <a class="waves-effect waves-light btn" id="add-btn">adicionar</a>
+            </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large orange darken-4">
+        <i class="large material-icons">menu</i>
+      </a>
+      <ul>
+        <li>
+          <a href="index.html" class="btn-floating orange darken-3"
+            ><i class="material-icons">home</i></a
+          >
+        </li>
+        <li>
+          <a href="add.html" class="btn-floating orange darken-3"
+            ><i class="material-icons">add_box</i></a
+          >
+        </li>
+        <li>
+          <a href="#search" class="btn-floating orange darken-3 modal-trigger"
+            ><i class="material-icons">search</i></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div id="search" class="modal">
+      <div class="modal-content">
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">search</i>
+                <textarea
+                  id="icon_prefix2"
+                  class="materialize-textarea"
+                ></textarea>
+                <label for="icon_prefix2">O que deseja procurar ?</label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a
+          href="#!"
+          class="modal-action modal-close waves-effect waves-green btn-flat"
+          >Procurar</a
+        >
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/add.js"></script>
+  </body>
+</html>
